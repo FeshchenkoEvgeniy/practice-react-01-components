@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-
+import {ContainerCard, Image, TitleText, Text} from './User.styled'
 export const User = ({ avatar, username, tag, location }) => {
   return (
-    <div>
-      <img src={avatar} alt={username} width="200px" />
-      <p>{username}</p>
-      <p>{tag}</p>
-      <p>{location}</p>
-    </div>
+    <ContainerCard>
+      <Image src={avatar} alt={username}/>
+      <TitleText>{username}</TitleText>
+      <Text>{tag}</Text>
+      <Text>{location}</Text>
+    </ContainerCard>
   );
 };
 

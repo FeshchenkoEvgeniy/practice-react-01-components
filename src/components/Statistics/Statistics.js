@@ -1,12 +1,13 @@
 import { Title } from './Title/Title';
 import { Stats } from './Stats/Stats';
 import data from '../data.json';
+import { Section } from './Statistics.styled';
 
 export const Statistics = () => {
   return (
-    <section>
+    <Section>
       <Title title="Upload stats" />
       <Stats stats={data} />
-    </section>
+    </Section>
   );
 };
